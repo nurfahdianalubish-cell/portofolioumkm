@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>burgerfiza - Pesan Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=5" />
+  </head>
+  <body class="loading">
+    <!-- LOADING SCREEN -->
+    <div id="loader">
+      <div class="burger">
+        <div class="b-top"></div>
+        <div class="b-lettuce"></div>
+        <div class="b-tomato"></div>
+        <div class="b-cheese"></div>
+        <div class="b-patty"></div>
+        <div class="b-bottom"></div>
+      </div>
+      <div class="loader-logo">Burger<span>fiza</span></div>
+      <div class="loader-bar"><span></span></div>
+      <small>Menyiapkan burger lezat<i>.</i><i>.</i><i>.</i></small>
+    </div>
+
+    <svg width="0" height="0" style="position: absolute">
+      <symbol
+        id="wa"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.6L3 21z" />
+        <path
+          d="M9 8.5c0 3.5 3 6.5 6.500 6.500l1-1.500-2-1-.8.800c-1-.4-2-1.400-2.400-2.400l.8-.8-1-2L9 8.500z"
+        />
+      </symbol>
+    </svg>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav>
+        <a href="#home" class="logo"
+          ><span class="logo-icon">🍔</span>Burger<span>fiza</span></a
+        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a
+          href="https://web.whatsapp.com/send?phone=6283143968353&text=Halo%20burgerfiza%2C%20saya%20ingin%20memesan."
+          target="_blank"
+          rel="noopener"
+          class="btn btn-sm btn-wa"
+        >
+          <svg class="ico"><use href="#wa" /></svg> Pesan via WhatsApp
+        </a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+      <div class="slider" id="slider">
+        <div class="track" id="track">
+          <div class="slide active">
+            <div class="container hero">
+              <div class="hero-content">
+                <p class="eyebrow a1">Selamat Datang di burgerfiza!</p>
+                <h1 class="a2">Burger Terbaik<br /><span>di Kota!</span></h1>
+                <p class="hero-desc a3">
+                  Dibuat dari daging sapi segar 100% dan resep rahasia lezat.<br />Rasakan
+                  sensasi burger yang berbeda di setiap gigitan.
+                </p>
+                <div class="hero-actions a4">
+                  <a
+                    href="https://web.whatsapp.com/send?phone=6283143968353&text=Halo%20burgerfiza%2C%20saya%20ingin%20memesan."
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-wa"
+                  >
+                    <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+                  </a>
+                  <a href="#menu" class="btn btn-outline">Lihat Menu &nbsp;›</a>
+                </div>
+              </div>
+              <div class="hero-img">
+                <span class="handwritten">Fresh<br />Beef 100%</span>
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+                  alt="Burger burgerfiza"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="container hero">
+              <div class="hero-content">
+                <p class="eyebrow a1">Menu Spesial Hari Ini</p>
+                <h1 class="a2">Crispy Chicken<br /><span>Burger!</span></h1>
+                <p class="hero-desc a3">
+                  Ayam krispi renyah di luar, lembut di dalam dengan mayonnaise
+                  gurih.<br />
+                  Cuma <strong>Rp 30.000</strong>, enak dan hemat!
+                </p>
+                <div class="hero-actions a4">
+                  <a
+                    href="https://web.whatsapp.com/send?phone=6283143968353&text=Halo%20burgerfiza%2C%20saya%20ingin%20memesan%20Crispy%20Chicken%20Burger."
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-wa"
+                  >
+                    <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+                  </a>
+                  <a href="#menu" class="btn btn-outline">Lihat Menu &nbsp;›</a>
+                </div>
+              </div>
+              <div class="hero-img">
+                <span class="handwritten">Crunchy &amp;<br />Yummy!</span>
+                <img
+                  src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=900&q=80"
+                  alt="Crispy Chicken Burger"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="container hero">
+              <div class="hero-content">
+                <p class="eyebrow a1">Menu Andalan Kami</p>
+                <h1 class="a2">Double Beef<br /><span>Burger!</span></h1>
+                <p class="hero-desc a3">
+                  Dua lapis daging sapi tebal dengan ekstra keju.<br />Cocok
+                  untuk kamu yang benar-benar lapar.
+                </p>
+                <div class="hero-actions a4">
+                  <a
+                    href="https://web.whatsapp.com/send?phone=6283143968353&text=Halo%20burgerfiza%2C%20saya%20ingin%20memesan."
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-wa"
+                  >
+                    <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+                  </a>
+                  <a href="#menu" class="btn btn-outline">Lihat Menu &nbsp;›</a>
+                </div>
+              </div>
+              <div class="hero-img">
+                <span class="handwritten">Double<br />Juicy!</span>
+                <img
+                  src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=900&q=80"
+                  alt="Burger burgerfiza"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="container hero">
+              <div class="hero-content">
+                <p class="eyebrow a1">Favorit Pelanggan</p>
+                <h1 class="a2">BBQ Bacon<br /><span>Burger!</span></h1>
+                <p class="hero-desc a3">
+                  Daging panggang, saus BBQ manis gurih, dan bacon renyah.<br />Satu
+                  gigitan, langsung jatuh cinta.
+                </p>
+                <div class="hero-actions a4">
+                  <a
+                    href="https://web.whatsapp.com/send?phone=6283143968353&text=Halo%20burgerfiza%2C%20saya%20ingin%20memesan."
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-wa"
+                  >
+                    <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+                  </a>
+                  <a href="#menu" class="btn btn-outline">Lihat Menu &nbsp;›</a>
+                </div>
+              </div>
+              <div class="hero-img">
+                <span class="handwritten">Smoky &amp;<br />Tasty</span>
+                <img
+                  src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=80"
+                  alt="Burger burgerfiza"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="arrow prev" id="prevBtn" aria-label="Sebelumnya">‹</button>
+      <button class="arrow next" id="nextBtn" aria-label="Berikutnya">›</button>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="container">
+      <p class="eyebrow center"><i></i>MENU FAVORIT<i></i></p>
+      <h2 class="section-title">Burger Pilihan Terbaik</h2>
+      <p class="section-sub">
+        Dari yang klasik hingga yang paling spesial, semua dibuat dengan bahan
+        berkualitas.
+      </p>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80"
+            alt="Classic Cheeseburger"
+          />
+          <div class="card-body">
+            <h3>Classic Cheeseburger</h3>
+            <p>Daging sapi, keju melted, selada segar, dan saus spesial.</p>
+            <div class="price">Rp 35.000</div>
+            <button
+              class="btn-order"
+              onclick="pesanWA('Classic Cheeseburger', '35.000')"
+            >
+              <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=500&q=80"
+            alt="Double Beef Burger"
+          />
+          <div class="card-body">
+            <h3>Double Beef Burger</h3>
+            <p>
+              Dua lapis daging sapi tebal dengan ekstra keju dan kelezatan
+              ganda.
+            </p>
+            <div class="price">Rp 50.000</div>
+            <button
+              class="btn-order"
+              onclick="pesanWA('Double Beef Burger', '50.000')"
+            >
+              <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=500&q=80"
+            alt="Crispy Chicken Burger"
+          />
+          <div class="card-body">
+            <h3>Crispy Chicken Burger</h3>
+            <p>
+              Ayam krispi renyah di luar, lembut di dalam dengan mayonnaise
+              gurih.
+            </p>
+            <div class="price">Rp 30.000</div>
+            <button
+              class="btn-order"
+              onclick="pesanWA('Crispy Chicken Burger', '30.000')"
+            >
+              <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=500&q=80"
+            alt="BBQ Bacon Burger"
+          />
+          <div class="card-body">
+            <h3>BBQ Bacon Burger</h3>
+            <p>
+              Daging sapi panggang disiram saus BBQ manis gurih dan bacon
+              renyah.
+            </p>
+            <div class="price">Rp 45.000</div>
+            <button
+              class="btn-order"
+              onclick="pesanWA('BBQ Bacon Burger', '45.000')"
+            >
+              <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=500&q=80"
+            alt="Mushroom Burger"
+          />
+          <div class="card-body">
+            <h3>Mushroom Burger</h3>
+            <p>Daging sapi dengan jamur pilihan dan saus spesial.</p>
+            <div class="price">Rp 42.000</div>
+            <button
+              class="btn-order"
+              onclick="pesanWA('Mushroom Burger', '42.000')"
+            >
+              <svg class="ico"><use href="#wa" /></svg> Pesan Sekarang
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+      <div class="about">
+        <div class="about-img">
+          <span class="handwritten">Burger<br />Fresh &amp; Tasty</span>
+          <img
+            src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"
+            alt="Burger dan kentang goreng"
+          />
+        </div>
+        <div class="about-text">
+          <p class="eyebrow small"><i></i>TENTANG KAMI</p>
+          <h2>burgerfiza</h2>
+          <p>
+            burgerfiza berdiri sejak tahun 2020 dengan misi menyajikan burger
+            kualitas restoran bintang lima dengan harga terjangkau. Kami selalu
+            menggunakan bahan-bahan lokal yang segar setiap harinya, mulai dari
+            roti yang dipanggang sendiri hingga daging pilihan tanpa bahan
+            pengawet.
+          </p>
+          <a href="#contact" class="btn btn-outline-dark"
+            >Pelajari Lebih Lanjut &nbsp;›</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="logo"
+            ><span class="logo-icon">🍔</span>Burger<span>fiza</span></a
+          >
+          <small>Good Burger &nbsp;•&nbsp; Good Mood</small>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Hubungi Kami</h4>
+          <div class="contact-row">
+            <div class="contact-item">
+              <span class="ci">📍</span>
+              <p>Jl. Datuk Kabu Pasar3 Tembung</p>
+            </div>
+            <a
+              class="contact-item"
+              href="https://web.whatsapp.com/send?phone=6283143968353&text=Halo%20burgerfiza%2C%20saya%20ingin%20memesan."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="ico ci"><use href="#wa" /></svg>
+              <p>WhatsApp<br />+62 831-4396-8353</p>
+            </a>
+            <div class="contact-item">
+              <span class="ci">🕒</span>
+              <p>Buka Setiap Hari<br />10.00 - 22.00 WIB</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+          <small>&copy; 2026 burgerfiza. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js?v=5"></script>
+  </body>
+</html>
